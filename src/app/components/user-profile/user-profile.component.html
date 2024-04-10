@@ -1,0 +1,13 @@
+<div class="contact-card-container">
+  <div>
+    <p>
+      <img [src]="user.photo" [alt]="user.name" />
+    </p>
+    <p>Nom : {{ user.name }}</p>
+    <p>Prénom : {{ user.firstName }}</p>
+    <p [hidden]="showAge">Age : {{ user.age }}</p>
+    <p>{{ user.quote }}</p>
+    <input type="text" [(ngModel)]="user.quote" />
+  </div>
+  <button (click)="toggleAgeVisibility()">Afficher/Masquer mon âge</button>
+</div>
