@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { BlockComponent } from './components/block/block.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { FormsModule } from '@angular/forms';
+import { AdminButtonComponent } from './components/admin-button/admin-button.component';
 
 @NgModule({
-  declarations: [AppComponent, BlockComponent, UserProfileComponent],
+  declarations: [AppComponent, BlockComponent, UserProfileComponent, AdminButtonComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
