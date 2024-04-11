@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BlockComponent } from './components/block/block.component';
-import { UserProfileComponent } from './components/user-profile/user-profile.component';
-import { FormsModule } from '@angular/forms';
 import { AdminButtonComponent } from './components/admin-button/admin-button.component';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BlockComponent } from './components/block/block.component';
+import { FormsModule } from '@angular/forms';
+import { MenuModule } from './menu.module';
 
 @NgModule({
-  declarations: [AppComponent, BlockComponent, UserProfileComponent, AdminButtonComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [AdminButtonComponent, AppComponent, BlockComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, MenuModule],
   providers: [],
   bootstrap: [AppComponent],
 })
