@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { MenuModule } from './menu.module';
 import { NgModule } from '@angular/core';
 import { SkillComponent } from './components/skill/skill.component';
+import { CreateOnomatopiaComponent } from './components/create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SkillComponent } from './components/skill/skill.component';
     BlockComponent,
     DeveloperComponent,
     SkillComponent,
+    CreateOnomatopiaComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, FormsModule, MenuModule],
   providers: [],
