@@ -1,0 +1,21 @@
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.skill-name {
+  font-size: 18px;
+}
+
+.skill-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.skill-link {
+  color: blue;
+  display: flex; 
+  align-items: center;
+}

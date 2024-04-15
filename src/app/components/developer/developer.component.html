@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">CV</h3>
+    <p class="card-text">{{ developer.lastName }} {{ developer.firstName }}</p>
+    <p class="card-text">{{ developer.age }} ans</p>
+    <p class="card-text">{{ developer.gender }}</p>
+    <p class="card-text">{{ developer.bio }}</p>
+  </div>
+  <div class="card-footer">
+    <h3 class="card-title">Compétences</h3>
+    <div class="skills">
+      <app-skill
+        class="skill"
+        *ngFor="let skill of developer.skills"
+        [skill]="skill"
+      />
+    </div>
+  </div>
+</div>
