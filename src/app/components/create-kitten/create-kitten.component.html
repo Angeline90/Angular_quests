@@ -1,0 +1,97 @@
+<!-- create-kitten.component.html -->
+<div class="create-kitten-form">
+<h2>Ajouter un chaton à l'adoption</h2>
+<form #myForm="ngForm" (ngSubmit)="myForm.valid && createKitten()">
+  <!-- Nom -->
+  <div>
+    <label for="name">Nom : </label>
+    <input
+      type="text"
+      id="name"
+      [(ngModel)]="newKitten.name"
+      name="nom"
+      #name="ngModel"
+      required
+      minlength="2"
+      maxlength="15"
+    />
+    <!-- Affichage des erreurs pour le champ Nom -->
+    <div *ngIf="myForm.submitted && name.errors">
+      <span *ngIf="name.errors['required']">Le {{ name.name }} est requis</span>
+      <span *ngIf="name.errors['minlength']"
+        >La longueur minimale doit être supérieure à 2</span
+      >
+      <span *ngIf="name.errors['maxlength']"
+        >La longueur maximale doit être inférieure à 15</span
+      >
+    </div>
+  </div>
+
+  <!-- Date de naissance -->
+  <div>
+    <label for="birthdate">Date de naissance : </label>
+    <input
+      type="date"
+      id="birthdate"
+      [(ngModel)]="newKitten.birthdate"
+      name="date de naissance"
+      #birthdate="ngModel"
+      required
+    />
+    <!-- Affichage des erreurs pour le champ Date de naissance -->
+    <div *ngIf="myForm.submitted && birthdate.errors">
+      <span *ngIf="birthdate.errors['required']"
+        >La {{ birthdate.name }} est requise</span
+      >
+    </div>
+  </div>
+
+  <!-- Race -->
+  <div>
+    <label for="breed">Race : </label>
+    <input
+      type="text"
+      id="breed"
+      [(ngModel)]="newKitten.breed"
+      name="race"
+      #breed="ngModel"
+      required
+      minlength="2"
+      maxlength="15"
+    />
+    <!-- Affichage des erreurs pour le champ Race -->
+    <div *ngIf="myForm.submitted && breed.errors">
+      <span *ngIf="breed.errors['required']"
+        >La {{ breed.name }} est requise</span
+      >
+      <span *ngIf="breed.errors['minlength']"
+        >La longueur minimale doit être supérieure à 2</span
+      >
+      <span *ngIf="breed.errors['maxlength']"
+        >La longueur maximale doit être inférieure à 15</span
+      >
+    </div>
+  </div>
+
+  <!-- Photo -->
+  <div>
+    <label for="image">Photo : </label>
+    <input
+      type="text"
+      id="image"
+      [(ngModel)]="newKitten.image"
+      name="photo"
+      #photo="ngModel"
+      required
+    />
+    <!-- Affichage des erreurs pour le champ Photo -->
+    <div *ngIf="myForm.submitted && photo.errors">
+      <span *ngIf="photo.errors['required']"
+        >La {{ photo.name }} est requise</span
+      >
+    </div>
+  </div>
+
+  <button type="submit">Ajouter un chaton</button>
+</form>
+</div>

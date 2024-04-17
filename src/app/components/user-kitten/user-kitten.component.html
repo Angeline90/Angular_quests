@@ -1,0 +1,7 @@
+<!-- user-kitten.component.html -->
+<div class="sidebar">
+  <h2>Mes chatons :</h2>
+  <div *ngFor="let kitten of userKittens" class="kitten-item">
+    <img [src]="kitten.image" alt="{{ kitten.name }}" />
+  </div>
+</div>

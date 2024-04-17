@@ -1,0 +1,10 @@
+.menu-container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap; 
+    margin-left: 200px;
+}
+
+.menu-container a {
+    padding: 35px;
+  }

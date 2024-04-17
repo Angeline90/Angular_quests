@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Bienvenue sur notre site d'adoption de chatons !</h1>
+  <h2>Chatons disponibles à l'adoption :</h2>
+  <div class="kitten-list">
+    <div *ngFor="let kitten of kittensAvailableForAdoption" class="kitten-item">
+      <div class="kitten-card">
+        <div class="kitten-image-container">
+          <img [src]="kitten.image" alt="{{ kitten.name }}" />
+          <div class="kitten-details">
+            <h3>{{ kitten.name }}</h3>
+            <p>Date de naissance : {{ kitten.birthdate | date : "dd/MM/yyyy" }}</p>
+            <p>Race : {{ kitten.breed }}</p>
+          </div>
+        </div>
+      </div>
+      <button class="button adopt-button" (click)="adoptKitten(kitten)">Adopter</button>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="button" (click)="toggleCreateForm()">Ajouter un chaton</button>
+  </div>
+  <div *ngIf="isCreateFormVisible">
+    <app-create-kitten (newKittensAvailableForAdoption)="onReceiveNewKitten($event)" />
+  </div>
+  <div class="sidebar"><app-user-kitten [userKittens]="userKittens" /></div>
+</div>

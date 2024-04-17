@@ -9,15 +9,21 @@ import { MenuModule } from './menu.module';
 import { NgModule } from '@angular/core';
 import { SkillComponent } from './components/skill/skill.component';
 import { CreateOnomatopiaComponent } from './components/create-onomatopia/create-onomatopia.component';
+import { CreateKittenComponent } from './components/create-kitten/create-kitten.component';
+import { ListKittenComponent } from './components/list-kitten/list-kitten.component';
+import { UserKittenComponent } from './components/user-kitten/user-kitten.component';
 
 @NgModule({
   declarations: [
     AdminButtonComponent,
     AppComponent,
     BlockComponent,
-    DeveloperComponent,
-    SkillComponent,
+    CreateKittenComponent,
     CreateOnomatopiaComponent,
+    DeveloperComponent,
+    ListKittenComponent,
+    SkillComponent,
+    UserKittenComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, FormsModule, MenuModule],
   providers: [],
