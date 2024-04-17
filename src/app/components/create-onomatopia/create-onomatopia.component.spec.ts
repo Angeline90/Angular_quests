@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CreateOnomatopiaComponent } from './create-onomatopia.component';
+import { FormsModule } from '@angular/forms';
 
 describe('CreateOnomatopiaComponent', () => {
   let component: CreateOnomatopiaComponent;
@@ -8,7 +9,8 @@ describe('CreateOnomatopiaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CreateOnomatopiaComponent]
+      declarations: [CreateOnomatopiaComponent],
+      imports: [FormsModule]
     })
     .compileComponents();
     

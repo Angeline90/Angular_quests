@@ -12,6 +12,7 @@ import { CreateOnomatopiaComponent } from './components/create-onomatopia/create
 import { CreateKittenComponent } from './components/create-kitten/create-kitten.component';
 import { ListKittenComponent } from './components/list-kitten/list-kitten.component';
 import { UserKittenComponent } from './components/user-kitten/user-kitten.component';
+import { CocktailListComponent } from './components/cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { UserKittenComponent } from './components/user-kitten/user-kitten.compon
     ListKittenComponent,
     SkillComponent,
     UserKittenComponent,
+    CocktailListComponent,
   ],
   imports: [AppRoutingModule, BrowserModule, FormsModule, MenuModule],
   providers: [],
