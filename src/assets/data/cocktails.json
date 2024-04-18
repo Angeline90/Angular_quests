@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sex on the beach",
+    "price": 10,
+    "image": "https://www.destinationcocktails.fr/wp-content/uploads/2019/11/cocktail-sex-on-the-beach-2.jpg"
+  },
+  {
+    "name": "Margarita",
+    "price": 13,
+    "image": "https://resize.elle.fr/original/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/margarita-2037408/9397186-12-fre-FR/Margarita.jpg"
+  },
+  {
+    "name": "Martini",
+    "price": 8,
+    "image": "https://www.196flavors.com/wp-content/uploads/2023/09/dry-martini-FP.jpg"
+  },
+  {
+    "name": "Caïpirinha",
+    "price": 10,
+    "image": "https://www.destinationcocktails.fr/wp-content/uploads/2019/11/cocktail-caipirinha-3.jpg"
+  },
+  {
+    "name": "Spritz",
+    "price": 12,
+    "image": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/80256_origin-scaled-270x410.jpg"
+  },
+  {
+    "name": "Mojito",
+    "price": 12,
+    "image": "https://www.destinationcocktails.fr/wp-content/uploads/2019/11/Cocktail-mojito-1.jpg"
+  }
+]
